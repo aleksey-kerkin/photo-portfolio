@@ -4,7 +4,7 @@ const { platform, tld, username } = Astro.props;
 
 <a
   target="_blank"
-  class="link group flex place-items-center gap-2"
+  class="link group space-x-1"
   href={`https://www.${platform}.${tld}/${username}`}>
   <slot />{platform}
   <div
