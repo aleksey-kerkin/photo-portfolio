@@ -1,0 +1,13 @@
+---
+const { platform, tld, username } = Astro.props;
+---
+
+<a
+  target="_blank"
+  class="link group flex place-items-center gap-2"
+  href={`https://www.${platform}.${tld}/${username}`}>
+  <slot />{platform}
+  <div
+    class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
+  </div>
+</a>

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "MapleMono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/MapleMono[wght]-VF.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MapleMono Italic";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/MapleMono-Italic[wght]-VF.woff2") format("woff2");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "MapleMono", monospace;
+  --font-maple-italic: "MapleMono Italic", monospace;
+}
+
+@layer components {
+  body {
+    @apply grid min-h-screen grid-rows-[auto_1fr_auto] bg-zinc-800 font-mono text-sky-400;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mt-4 mb-8 text-balance first-letter:ps-4 font-maple-italic;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-lg;
+  }
+
+  p,
+  li {
+    @apply text-pretty;
+  }
+
+  p {
+    @apply first-letter:ps-4;
+  }
+
+  li {
+    @apply w-fit
+  }
+
+  .container {
+    @apply mx-auto px-4;
+  }
+
+  .link {
+    @apply text-pink-400 duration-200 hover:text-pink-700 font-maple-italic focus-visible:text-pink-700 focus-visible:outline-1 outline-offset-4 outline-pink-700;
+  }
+}
