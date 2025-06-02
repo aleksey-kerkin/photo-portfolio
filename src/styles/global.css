@@ -32,11 +32,11 @@
   h4,
   h5,
   h6 {
-    @apply mt-4 mb-8 text-balance first-letter:ps-4 font-maple-italic;
+    @apply font-maple-italic mt-4 mb-2 text-center text-balance;
   }
 
   h1 {
-    @apply text-5xl;
+    @apply mb-8 text-5xl;
   }
 
   h2 {
@@ -64,12 +64,12 @@
     @apply text-pretty;
   }
 
-  p {
-    @apply first-letter:ps-4;
+  li {
+    @apply w-fit;
   }
 
-  li {
-    @apply w-fit
+  em {
+    @apply font-maple-italic not-italic;
   }
 
   .container {
@@ -77,6 +77,6 @@
   }
 
   .link {
-    @apply text-pink-400 duration-200 hover:text-pink-700 font-maple-italic focus-visible:text-pink-700 focus-visible:outline-1 outline-offset-4 outline-pink-700;
+    @apply font-maple-italic text-pink-400 outline-offset-4 outline-pink-700 duration-200 hover:text-pink-700 focus-visible:text-pink-700 focus-visible:outline-1;
   }
 }

@@ -1,24 +1,18 @@
 ---
-
+import Link from './Link.astro';
 ---
 
 <header class="mt-8 mb-8 pb-8">
   <nav class="flex place-content-center gap-4 text-xl">
-    <a
+    <Link
       class="link group"
       href="/"
-      >chronicles
-      <div
-        class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
-      </div>
-    </a>
-    <a
+      linkText="chronicles"
+    />
+    <Link
       class="link group"
       href="/about/"
-      >about
-      <div
-        class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
-      </div>
-    </a>
+      linkText="about"
+    />
   </nav>
 </header>

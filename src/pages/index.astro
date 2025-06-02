@@ -1,48 +1,27 @@
 ---
-import BaseLayout from '@/layout/BaseLayout.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const allPosts = Object.values(
+  import.meta.glob('./chronicles/*.md', { eager: true })
+);
 ---
 
 <BaseLayout pageTitle="Chronicles">
-  <section class="container">
-    <h1>Hello blog</h1>
-    <p>This is where I will post about my journey learning Astro.</p>
-    <ul>
-      <li>
-        <a
-          class="link group"
-          href="/posts/post-1/"
-          >Post 1<div
-            class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
-          </div></a
-        >
-      </li>
-      <li>
-        <a
-          class="link group"
-          href="/posts/post-2/"
-          >Post 2 <div
-            class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
-          </div></a
-        >
-      </li>
-      <li>
-        <a
-          class="link group"
-          href="/posts/post-3/"
-          >Post 3 <div
-            class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
-          </div></a
-        >
-      </li>
-      <li>
-        <a
-          class="link group"
-          href="/posts/post-4/"
-          >Post 4 <div
-            class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
-          </div></a
-        >
-      </li>
-    </ul>
+  <section transition:animate="slide" class="container">
+    <h1>chronicles</h1>
+    <div class="columns-1 gap-4 space-y-4 md:columns-2 lg:columns-3">
+      {
+        allPosts.map((post: any) => (
+          <a href={post.url} class="block overflow-hidden">
+            <img
+              class="max-w-full cursor-pointer duration-200 hover:scale-105 rounded-xs"
+              src={post.frontmatter.image.url}
+              alt={post.frontmatter.image.alt}
+              title={post.frontmatter.image.alt.toLowerCase()}
+            />
+          </a>
+        ))
+      }
+    </div>
   </section>
 </BaseLayout>

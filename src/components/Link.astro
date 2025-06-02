@@ -1,0 +1,12 @@
+---
+const { href, linkText } = Astro.props;
+---
+
+<a
+  class="link group"
+  href={href}
+  >{linkText}
+  <div
+    class="h-0.5 w-0 bg-pink-700 transition-[width] duration-200 group-hover:w-full">
+  </div>
+</a>
