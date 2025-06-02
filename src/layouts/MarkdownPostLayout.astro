@@ -7,9 +7,9 @@ const { frontmatter } = Astro.props;
 <BaseLayout pageTitle={frontmatter.title}>
   <article
     transition:animate="slide"
-    class="container">
+    class="container max-w-7xl">
     <img
-      class="mx-auto h-fit rounded-xs"
+      class="w-full rounded-xs"
       src={frontmatter.image.url}
       alt={frontmatter.image.alt}
     />
