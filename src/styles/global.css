@@ -22,6 +22,10 @@
 }
 
 @layer components {
+  html {
+    scrollbar-width: none;
+  }
+
   body {
     @apply grid min-h-screen grid-rows-[auto_1fr_auto] bg-gray-900 font-mono text-pink-200;
   }
@@ -81,6 +85,6 @@
   }
 
   :focus-visible {
-    @apply outline-offset-4 outline-pink-700 focus-visible:text-pink-700 focus-visible:outline-1 duration-200;
+    @apply outline-offset-4 outline-pink-700 duration-200 focus-visible:text-pink-700 focus-visible:outline-1;
   }
 }
