@@ -6,14 +6,17 @@ const allPosts = Object.values(
 );
 ---
 
-<BaseLayout pageTitle="Chronicles">
-  <section transition:animate="slide" class="container">
+<BaseLayout title="Chronicles">
+  <section class="container">
+    <h1>chronicles</h1>
     <div class="columns-1 gap-4 space-y-4 md:columns-2 lg:columns-3">
       {
         allPosts.map((post: any) => (
-          <a href={post.url} class="block overflow-hidden">
+          <a
+            href={post.url}
+            class="block overflow-hidden">
             <img
-              class="max-w-full cursor-pointer duration-200 hover:scale-105 rounded-xs"
+              class="max-w-full cursor-pointer rounded-sm duration-200 hover:scale-105"
               src={post.frontmatter.image.url}
               alt={post.frontmatter.image.alt}
               title={post.frontmatter.image.alt.toLowerCase()}

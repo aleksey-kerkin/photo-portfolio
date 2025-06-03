@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'Sunset at the field'
 author: 'aleksey.kerkin'
 description: 'description'
 image:

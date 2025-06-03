@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'Gates to the uknown'
 author: 'aleksey.kerkin'
 description: 'description'
 image:

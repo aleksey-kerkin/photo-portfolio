@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'A lamp on the orage cloth'
 author: 'aleksey.kerkin'
 description: 'description'
 image:

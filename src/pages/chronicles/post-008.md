@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'Crocodile'
 author: 'aleksey.kerkin'
 description: 'description'
 image:

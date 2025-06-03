@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'RGB and yellow'
 author: 'aleksey.kerkin'
 description: 'description'
 image:

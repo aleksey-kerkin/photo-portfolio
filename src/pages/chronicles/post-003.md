@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'Two circles and one square'
 author: 'aleksey.kerkin'
 description: 'description'
 image:

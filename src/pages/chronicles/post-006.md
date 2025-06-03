@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'At the train station'
 author: 'aleksey.kerkin'
 description: 'description'
 image:

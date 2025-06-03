@@ -4,19 +4,23 @@ import LogoGH from '@/assets/icons/github.svg';
 import LogoTG from '@/assets/icons/telegram.svg';
 ---
 
-<footer class="mt-8 mb-8 pt-8">
-  <nav class="flex place-content-center gap-4">
-    <Social
-      platform="github"
-      tld="com"
-      username="aleksey-kerkin"
-      ><LogoGH class:list={'inline-block'} /></Social
-    >
-    <Social
-      platform="telegram"
-      tld="me"
-      username="the_luminal_atlas"
-      ><LogoTG class:list={'inline-block'} /></Social
-    >
-  </nav>
+<footer
+  class="sticky inset-x-0 bottom-0 mt-8 h-fit border-t-2 bg-gray-950 px-8 py-8 max-sm:px-4 max-sm:py-4">
+  <div class="container flex place-content-between place-items-center">
+    <p><span class="text-2xl align-middle">&copy;</span> {new Date().getFullYear()} aleksey.kerkin</p>
+    <nav class="flex place-content-center gap-4">
+      <Social
+        platform="github"
+        tld="com"
+        username="aleksey-kerkin"
+        ><LogoGH class:list={'inline-block'} /></Social
+      >
+      <Social
+        platform="telegram"
+        tld="me"
+        username="the_luminal_atlas"
+        ><LogoTG class:list={'inline-block'} /></Social
+      >
+    </nav>
+  </div>
 </footer>

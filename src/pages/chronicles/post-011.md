@@ -1,6 +1,6 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: title
+title: 'Foggy window'
 author: 'aleksey.kerkin'
 description: 'description'
 image:
