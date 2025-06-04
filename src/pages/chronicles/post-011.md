@@ -1,12 +1,12 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: 'Foggy window'
+title: 'A lamp on the orage cloth'
 author: 'aleksey.kerkin'
 description: 'description'
 image:
-  url: '/assets/img/photo_2025-02-01_10-38-29.jpg'
-  alt: 'Foggy window'
-pubDate: 2025-02-01
+  url: '/assets/img/photo_2025-04-13_22-30-18.jpg'
+  alt: 'A lamp on the orage cloth'
+pubDate: 2025-04-13
 ---
 
 Some text if you want.

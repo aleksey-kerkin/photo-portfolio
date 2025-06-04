@@ -1,12 +1,12 @@
 ---
 layout: '@/layouts/MarkdownPostLayout.astro'
-title: 'Gates to the uknown'
+title: 'Foggy window'
 author: 'aleksey.kerkin'
 description: 'description'
 image:
-  url: '/assets/img/photo_2025-05-28_22-54-28.jpg'
-  alt: 'Gates to the uknown'
-pubDate: 2025-05-28
+  url: '/assets/img/photo_2025-02-01_10-38-29.jpg'
+  alt: 'Foggy window'
+pubDate: 2025-02-01
 ---
 
 Some text if you want.

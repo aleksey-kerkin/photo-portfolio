@@ -2,17 +2,31 @@
 import Link from '@/components/Link.astro';
 import BaseLayout from './BaseLayout.astro';
 
+interface Props {
+  frontmatter: {
+    title: string;
+    author: string;
+    description?: string;
+    image: {
+      url: string;
+      alt: string;
+    };
+    pubDate: string;
+  };
+}
+
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <article class="container max-w-6xl grid">
+  <article class="container grid max-w-6xl">
     <Link
       href="/"
-      linkText="&larr; back to chronicles"
+      linkText="← back to chronicles"
     />
+    <h1>{frontmatter.title}</h1>
     <img
-      class="mx-auto mt-8 max-h-fit rounded-sm"
+      class="mx-auto mb-8 max-h-fit rounded-sm"
       src={frontmatter.image.url}
       alt={frontmatter.image.alt}
     />
